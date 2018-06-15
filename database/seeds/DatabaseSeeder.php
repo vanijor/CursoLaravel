@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             'gender'        => 'M', 
             'birth'         => '1981-05-13', 
             'email'         => 'jorge@hotmail.com', 
-            'password'      => Hash::make('123456'),
+            'password'      => env('PASSWORD_HASH') ? Hash::make('123456') : '123456',
         ]);
         // $this->call(UsersTableSeeder::class);
     }
