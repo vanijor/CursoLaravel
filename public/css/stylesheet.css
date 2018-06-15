@@ -11,6 +11,15 @@
 /**
 * stylesheet for login page
 */
+
+div.background{
+    position: absolute;
+    left: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-image: url('../images/calculadora.jpg');
+    background-size: cover;
+}
 section#conteudo-view{
     position: absolute;
     right: 0;
